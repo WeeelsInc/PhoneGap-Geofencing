@@ -6,7 +6,7 @@
  * dov.goldberg@ogonium.com
  *
  */
- 
+
 #import <CoreLocation/CoreLocation.h>
 #import <Cordova/CDVPlugin.h>
 
@@ -65,6 +65,8 @@ typedef NSUInteger DGGeofencingStatus;
 - (void) initCallbackForRegionMonitoring:(CDVInvokedUrlCommand*)command;
 - (void) startMonitoringRegion:(CDVInvokedUrlCommand*)command;
 - (void) stopMonitoringRegion:(CDVInvokedUrlCommand*)command;
+- (void) getMonitoredRegions:(CDVInvokedUrlCommand*)command;
+- (void) stopMonitoringAllRegions:(CDVInvokedUrlCommand*)command;
 - (void) startMonitoringSignificantLocationChanges:(CDVInvokedUrlCommand*)command;
 - (void) stopMonitoringSignificantLocationChanges:(CDVInvokedUrlCommand*)command;
 
